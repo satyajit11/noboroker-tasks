@@ -1,0 +1,44 @@
+@mixin breakpoint($type, $fallback:false, $parent:true) {
+
+  @if $type == small {
+    @media (min-width: $break-small) {
+      @content;
+    }
+  }
+
+  @if $type == mobile {
+    @media (min-width: $break-mobile) {
+      @content;
+    }
+  }
+
+  @if $type == medium {
+    @media (min-width: $break-medium) {
+      @content;
+    }
+  }
+
+  @if $type == large {
+    @media (min-width: $break-large) {
+      @content;
+    }
+  } 
+
+  @if $type == x-large {
+    @media (min-width: $break-x-large) {
+      @content;
+    }
+  }
+
+  @if $fallback {
+    @if $parent {
+      .#{$fallback} & {
+        @content;
+      }
+    } @else {
+      .#{$fallback} {
+        @content;
+      }
+    }
+  }
+}

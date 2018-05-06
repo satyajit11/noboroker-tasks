@@ -1,0 +1,18 @@
+$button-colors: (
+  error: (#db4344,14px,300),
+  success : (#4F8A10,14px,300),
+  info : (#00529B,14px,300)
+);
+
+p{
+    @each $name, $value in $button-colors {
+        $textcolor: nth($value, 1);
+        $textsize: nth($value, 2);
+        $textweight: nth($value, 3);
+        &.#{$name}-message {
+            color: $textcolor;
+            font-size: $textsize;
+            font-weight: $textweight;
+        }
+    }
+}

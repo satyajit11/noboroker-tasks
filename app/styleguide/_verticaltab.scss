@@ -1,0 +1,44 @@
+.vertical-tab {
+    padding: $null;
+    border-right: $border-width;
+    border-color: $light-border-color;
+    p {
+        @include headertag(14px,200,#999);
+        padding: 5px 10px;
+        text-transform: capitalize;
+        &:last-child {
+            color: $branded-red-300;
+            text-align: $align-center;
+        }
+    }
+    ul {
+        padding: 0;
+        a{
+            @include anchor(inherit);
+        }
+        li {
+            @include list(capitalize,inherit,10px,10px,16px);
+            cursor: pointer;
+            .default-icon {
+                display: $inline-display;
+            }
+            .tab-name {
+                display: $inline-display;
+                margin-left: 20px;
+                img {
+                    display: $inline-display;
+                }
+            }
+            .active-icon {
+                display: none;
+                float: right;
+            }
+            &.current {
+                background-color: $base-color;
+                .active-icon {
+                    display: $inline-display;
+                }
+            }
+        }
+    }
+}

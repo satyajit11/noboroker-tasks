@@ -1,0 +1,111 @@
+
+@import '../styleguide/variables';
+@import '../styleguide/functions/font';
+@import '../styleguide/type';
+@import '../styleguide/mixin/vendorprefix';
+
+
+
+
+.app{
+    background-image: linear-gradient(to bottom, #d576f6 4%, #8b60f1);
+    min-height: font-units(750px);
+    &-header{
+        height: font-units(60px);
+        h1{
+            @include Fontformat($fontstyle-text-lato,36px);
+            color: #fff;
+            margin: 0;
+            text-align: center;
+        }
+    }
+
+    &-board{
+        .board-wrapper{
+            padding: font-units(24px);
+        }
+    }
+    &-card{
+        background-color: #e5ebef;
+        border-radius: font-units(3px);
+        margin-left: font-units(24px);
+        height: fit-content;
+        &:first-child{
+            margin-left: 0;
+        }
+        .card{
+            &-header{
+                @include rem(padding, 16px 12px);
+                .header{
+                    &-name{
+                        p{
+                            @include Fontformat($fontstyle-text,16px);
+                            color: #212121;
+                            margin-bottom: 0;
+                        }
+                    }
+                    &-action{
+                        margin-left: auto;
+                        p{
+                            color: #212121;
+                            margin-bottom: 0;
+                            cursor: pointer;
+                        }
+                    }
+                }
+            }
+            &-body{
+                @include rem(padding, 12px);
+            }
+            &-addition{
+                @include rem(padding, 0 12px);
+                &_input{
+                    margin-top: font-units(12px);
+                    textarea{
+                        resize: none;
+                    }
+                    .btn-info{
+                        width: font-units(80px);
+                        margin-right: font-units(24px);
+                    }
+                    .cancel{
+                        @include Fontformat($fontstyle-text,14px);
+                        color: #757575;
+                        margin-bottom: 0;
+                        cursor: pointer;
+                    }
+                }
+                .link-add{
+                    @include rem(padding,10px 0);
+                    &:hover{
+                        background-color: #ececec;
+                    }
+                    a{
+                        color: #212121;
+                    }
+                }
+            }
+            &-list{
+                @include Fontformat($fontstyle-text,14px);
+                color: #212121;
+                background-color: #fff;
+                padding: font-units(12px);
+                margin-bottom: font-units(12px);
+                border-radius: font-units(3px);
+                cursor: pointer;
+                span{
+                    margin-left: auto;
+                }
+                
+                &:hover{
+                    box-shadow: 0 2px 6px 0 rgba(0, 17, 65, 0.29);
+                }
+            }
+        }
+    }
+    .ui-state-highlight1 { 
+        height: 1.5rem; 
+        line-height: 1.2rem;
+        background-color: #fff; 
+    }
+}

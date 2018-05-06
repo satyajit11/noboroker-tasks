@@ -1,0 +1,12 @@
+@import '../_variables.scss';
+@mixin only-for-mobile {
+    @media (max-width: $breakpoint-mobile) {
+        @content;
+    }
+}
+
+@mixin preview-only {
+    @media (max-width: 1080px) {
+        @content;
+    }
+}

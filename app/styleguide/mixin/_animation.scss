@@ -1,0 +1,11 @@
+
+@mixin invalid-animation($outline:none,$margin-bottom:0,$background:#f4f4f4,$perspective:1000) {
+    will-change: transform;
+    animation-name: wiggle;
+    animation-duration: 150ms;
+    animation-iteration-count: 6;
+}
+
+
+
+		

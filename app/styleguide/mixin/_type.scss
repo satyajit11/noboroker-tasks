@@ -1,0 +1,55 @@
+@mixin headertag($font-size,$font-weight,$color) {
+    font-size: $font-size;
+    font-weight: $font-weight;
+    color: $color;
+}
+@mixin Fontformat($family,$size,$weight:normal,$style:normal,$stretch:normal,$height:normal,$spacing:normal){
+    font: {
+        family: $family;
+        size: font-units($size);
+        weight: $weight;
+        style: $style; 
+        stretch: $stretch; 
+    }
+    line: {
+        height: $height;  
+    }
+    letter-spacing: $spacing;
+}
+
+@mixin Anchor($color,$display:block){
+    color: $color;
+    text-decoration: none;
+    position: relative;
+    word-wrap: break-word;
+    &::before {
+        content: '';
+        position: absolute;
+        display: $display;
+        -webkit-transition: -webkit-transform .5s ease;
+        transition: -webkit-transform .5s ease;
+        transition: transform .5s ease;
+        transition: transform .5s ease, -webkit-transform .5s ease;
+        left: $null;
+        bottom: 0px;
+        width: $full;
+        height: 1px;
+        background: $color;
+        -webkit-transform: scaleX(0);
+                transform: scaleX(0);
+    }
+    &:hover::before {
+        -webkit-transform: scaleX(1);
+                transform: scaleX(1);
+    }
+}
+
+@mixin Beforestyle($display: block, $positon: absolute) {
+    content: "";
+    display: $display;
+    position: $positon;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 0;
+}

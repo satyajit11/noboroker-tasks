@@ -1,0 +1,113 @@
+@import '../_variables.scss';
+@mixin button($width, $height, $font, $border:$null, $bgcolor:#4a90e2, $textstyle:capitalize) {
+    width: $width;
+    height: $height;
+    outline: none;
+    background-color: $bgcolor;
+    padding: $null;
+    border-radius: $border;
+    font-size: $font;
+    text-transform: $textstyle;
+    @if #{$bgcolor}=='#4a90e2' {
+        color: #fff;
+    }
+    @else {
+        color: #212121;
+    }
+    &:hover {
+        transform: translateY(-1px);
+        box-shadow: 0 7px 14px rgba(50, 50, 93, 0.1), 0 3px 6px rgba(0, 0, 0, 0.08);
+        &:focus {
+            box-shadow: 0 0 0 3px rgba($bgcolor, 0.5);
+        }
+    }
+}
+
+@mixin new-button($width, $height, $font, $bgcolor,$color: #fff) {
+    width: $width;
+    height: $height;
+    color: $color;
+    outline: none;
+    font-size: $font;
+    font-family: $fontstyle-text;
+    background-color: $bgcolor;
+    padding: inherit;
+    border: none;
+    &:focus {
+        box-shadow: 0 0 0 0.2rem rgba($bgcolor, 0.5);
+    }
+    &:active{
+        background-color: $bgcolor;
+        border: none;
+    }
+}
+
+@mixin button-size($float, $text-transform, $padding-vertical, $padding-horizontal, $font-size, $line-height, $border-radius, $color:#fff, $outline: none, $display: block) {
+    padding: $padding-vertical $padding-horizontal;
+    font-size: $font-size;
+    line-height: $line-height;
+    border-radius: $border-radius;
+    display: $display;
+    outline: $outline;
+    text-transform: $text-transform;
+    float: $float;
+    &:focus {
+        color: $color;
+    }
+    &:hover {
+        color: $color;
+    }
+}
+
+@mixin button-variant($color, $background, $border, $border-width) {
+    color: $color;
+    background-color: $background;
+    border-color: $border;
+    border: $border-width;
+}
+
+@mixin standard-btn($width, $radius, $bg-color, $font-size, $color, $font-family: $fontstyle-text, $font-weight: normal, $align: center, $outline:none) {
+    width: $width;
+    border-radius: $radius;
+    background-color: $bg-color;
+    font-size: $font-size;
+    color: $color;
+    font-family: $font-family;
+    font-weight: $font-weight;
+    text-align: $align;
+    outline: $outline;
+    &:hover {
+        transform: translateY(-1px);
+        box-shadow: 0 7px 14px rgba(50, 50, 93, 0.1), 0 3px 6px rgba(0, 0, 0, 0.08);
+        &:focus {
+            box-shadow: 0 0 0 3px rgba($bg-color, 0.5);
+        }
+    }
+}
+
+@mixin transparent-btn($width, $radius, $font-size, $color, $font-family: $fontstyle-text, $bg-color: transparent, $font-weight: normal, $align: center, $outline:none) {
+    width: $width;
+    border-radius: $radius;
+    font-size: $font-size;
+    color: $color;
+    background-color: $bg-color;
+    font-family: $font-family;
+    font-weight: $font-weight;
+    text-align: $align;
+    outline: $outline;
+}
+
+@mixin RoundedButton($color, $bgcolor, $radius, $padding, $width: auto, $height: auto) {
+    color: $color;
+    background-color: $bgcolor;
+    border-radius: $radius;
+    padding: $padding;
+    font-family: $fontstyle-text;
+    width: $width;
+    height: $height;
+    text-transform: capitalize;
+    outline: none;
+    &:focus {
+        box-shadow: 0 0 0 3px transparentize($bgcolor, 0.5);
+    }
+}

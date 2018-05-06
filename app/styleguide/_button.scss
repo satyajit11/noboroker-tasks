@@ -1,0 +1,20 @@
+@import 'mixin/button';
+$button-colors: (
+  branded: (#db4344,#fff,140px),
+  disabled : (#ccc,#fff,140px),
+  default: (#0f1226,#fff,140px)
+);
+
+.btn{
+    @each $name, $value in $button-colors {
+        $bgcolor: nth($value, 1);
+        $textcolor: nth($value, 2);
+        $buttonwidth: nth($value, 3);
+        &.#{$name}-btn {
+            @include button-size (left,capitalize,8px,10px,14px,1,3px);
+            background-color: $bgcolor;
+            color: $textcolor;
+            width: $buttonwidth;
+        }
+    }
+}

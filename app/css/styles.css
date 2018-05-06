@@ -1,0 +1,148 @@
+/* color pallate*/
+/*Emaxio color pallate*/
+/*Default Font Family*/
+/*Default Font Family*/
+/*font size*/
+/*font weight*/
+/*line height*/
+/*border width*/
+/*display variable*/
+/*position vendor prefix*/
+/*float */
+/*value*/
+.container-wrap {
+  padding: 0; }
+
+/*app-preview*/
+/*app-preview*/
+/*breakpoint*/
+h1,
+h2 {
+  font-family: "Merriweather", serif; }
+
+h4,
+p,
+a,
+input,
+textarea,
+button,
+span,
+label {
+  font-family: "Open Sans", sans-serif; }
+
+/*font size*/
+/*font weight*/
+/*line height*/
+/*border width*/
+/*display variable*/
+/*position vendor prefix*/
+/*float */
+/*value*/
+.container-wrap {
+  padding: 0; }
+
+/*app-preview*/
+/*app-preview*/
+.html {
+  font-size: calc(1em + 1vw); }
+
+/*checkbox vendor-prefix*/
+/*ripple effect*/
+/*shake animation*/
+.app {
+  background-image: linear-gradient(to bottom, #d576f6 4%, #8b60f1);
+  min-height: 46.875rem; }
+  .app-header {
+    height: 3.75rem; }
+    .app-header h1 {
+      font-family: "Lato", sans-serif;
+      font-size: 2.25rem;
+      font-weight: normal;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: normal;
+      letter-spacing: normal;
+      color: #fff;
+      margin: 0;
+      text-align: center; }
+  .app-board .board-wrapper {
+    padding: 1.5rem; }
+  .app-card {
+    background-color: #e5ebef;
+    border-radius: 0.1875rem;
+    margin-left: 1.5rem;
+    height: fit-content; }
+    .app-card:first-child {
+      margin-left: 0; }
+    .app-card .card-header {
+      padding: 16px 12px;
+      padding: 1rem 0.75rem; }
+      .app-card .card-header .header-name p {
+        font-family: "Open Sans", sans-serif;
+        font-size: 1rem;
+        font-weight: normal;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        color: #212121;
+        margin-bottom: 0; }
+      .app-card .card-header .header-action {
+        margin-left: auto; }
+        .app-card .card-header .header-action p {
+          color: #212121;
+          margin-bottom: 0;
+          cursor: pointer; }
+    .app-card .card-body {
+      padding: 12px;
+      padding: 0.75rem; }
+    .app-card .card-addition {
+      padding: 0 12px;
+      padding: 0 0.75rem; }
+      .app-card .card-addition_input {
+        margin-top: 0.75rem; }
+        .app-card .card-addition_input textarea {
+          resize: none; }
+        .app-card .card-addition_input .btn-info {
+          width: 5rem;
+          margin-right: 1.5rem; }
+        .app-card .card-addition_input .cancel {
+          font-family: "Open Sans", sans-serif;
+          font-size: 0.875rem;
+          font-weight: normal;
+          font-style: normal;
+          font-stretch: normal;
+          line-height: normal;
+          letter-spacing: normal;
+          color: #757575;
+          margin-bottom: 0;
+          cursor: pointer; }
+      .app-card .card-addition .link-add {
+        padding: 10px 0;
+        padding: 0.625rem 0; }
+        .app-card .card-addition .link-add:hover {
+          background-color: #ececec; }
+        .app-card .card-addition .link-add a {
+          color: #212121; }
+    .app-card .card-list {
+      font-family: "Open Sans", sans-serif;
+      font-size: 0.875rem;
+      font-weight: normal;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: normal;
+      letter-spacing: normal;
+      color: #212121;
+      background-color: #fff;
+      padding: 0.75rem;
+      margin-bottom: 0.75rem;
+      border-radius: 0.1875rem;
+      cursor: pointer; }
+      .app-card .card-list span {
+        margin-left: auto; }
+      .app-card .card-list:hover {
+        box-shadow: 0 2px 6px 0 rgba(0, 17, 65, 0.29); }
+  .app .ui-state-highlight1 {
+    height: 1.5rem;
+    line-height: 1.2rem;
+    background-color: #fff; }

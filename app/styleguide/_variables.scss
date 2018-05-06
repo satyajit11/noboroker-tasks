@@ -1,0 +1,229 @@
+/* color pallate*/
+
+$container-bg: #eef3f6;
+$card-bg: #ffffff;
+$label-color: #757575;
+$hinttext-color: #9d9d9d;
+$golden-yellow: #fcc32c;
+$button-active: #4fbcbf;
+$button-bg: #4fbcbf;
+$checkbox-label: #212121;
+$warm-grey: #888888;
+$faded-red: #db4344;
+$brand-blue: #4990e2;
+$greyish-brown: #555555;
+$black: #000000;
+$pinkish-grey-7: rgba(204, 204, 204, 0.07);
+$pinkish-grey-20: rgba(204, 204, 204, 0.20);
+$black-two: #222222;
+$white: #ffffff;
+$base-color: #fff;
+$base-color-100: #f1f1f1;
+$base-color-400: #f4f4f4;
+$dark-text-color: #333;
+$grey-text-color: #999;
+$light-text-color: #777;
+$light-border-color: #ececec;
+$default-border-color: #e7e7e7 !default;
+
+/*Emaxio color pallate*/
+
+$primary-blue-300: #0f1226;
+$primary-blue-200: #20233a;
+$primary-blue-100: #303751;
+$secondary-gray-300: #1d1d2e;
+$secondary-gray-200: #353547;
+$secondary-gray-100: #46465d;
+$branded-red-300: #db4344;
+$branded-red-200: #a93233;
+$branded-red-100: #fa5b5c;
+$secondary-brand-color: #3dc6c4;
+$bg-color: #eef3f6;
+
+/*Default Font Family*/
+
+$fontstyle-text: 'Open Sans',
+sans-serif;
+$fontstyle-headline: 'Merriweather',
+serif;
+$fontstyle-text-lato: 'Lato',
+sans-serif;
+$fontstyle-text-raleway: 'Raleway',
+sans-serif;
+$fontstyle-text-play: 'Playfair Display',
+serif;
+
+/*Default Font Family*/
+
+$font-family-gotham-narrow: 'Open Sans',
+sans-serif;
+$font-family-serif: 'Open Sans',
+sans-serif;
+$font-family-lato: 'Lato',
+sans-serif;
+
+/*font size*/
+
+$h1: 60px;
+$h2: 36px;
+$h4:20px;
+$besic-text:16px;
+$medium-text: 18px;
+
+/*font weight*/
+
+$bold-weight: 500;
+$light-weight: 100;
+$medium-weight: 300;
+
+/*line height*/
+
+$normal-lineheight: 1;
+
+/*border width*/
+
+$border-width: 2px solid;
+$small-border-width: 1px solid;
+
+/*display variable*/
+
+$block-display: block;
+$inline-display: inline-block;
+
+/*position vendor prefix*/
+
+$hidden-display: none;
+$relative-position: relative;
+$absolute-position: absolute;
+$fixed-position: fixed;
+$static-position: static;
+
+/*float */
+
+$left-pull: left;
+$right-pull: right;
+$align-center: center;
+
+/*value*/
+
+$null:0;
+$full:100%;
+.container-wrap {
+    padding: 0;
+}
+
+
+/*app-preview*/
+
+$app-width: 290px !default;
+$app-height: 516px !default;
+$app-besic-color: #212121;
+$app-submenu-color: #757575;
+$border-radius: 3px;
+
+/*app-preview*/
+
+$besic-height: 200px;
+
+/*breakpoint*/
+
+$break-tablet-potrait: 1024px;
+$breakpoint-tablet: 768px;
+$breakpoint-mobile: 480px;
+$break-small:320px;
+$break-medium:640px;
+h1,
+h2 {
+    font-family: $fontstyle-headline;
+}
+
+h4,
+p,
+a,
+input,
+textarea,
+button,
+span,
+label {
+    font-family: $fontstyle-text;
+}
+
+
+/*font size*/
+
+$h1: 46px;
+$h4: 20px;
+$h2:28px;
+$landing-p:18px;
+$medium-p: 16px;
+$besic-font:14px;
+$normal-p: 12px;
+
+/*font weight*/
+
+$bold-weight: 500;
+$light-weight: 100;
+$medium-weight: 300;
+
+/*line height*/
+
+$normal-lineheight: 1;
+
+/*border width*/
+
+$border-width: 2px solid;
+$small-border-width: 1px solid;
+
+/*display variable*/
+
+$block-display: block;
+$inline-display: inline-block;
+
+/*position vendor prefix*/
+
+$hidden-display: none;
+$relative-position: relative;
+$absolute-position: absolute;
+$fixed-position: fixed;
+$static-position: static;
+
+/*float */
+
+$left-pull: left;
+$right-pull: right;
+$align-center: center;
+
+/*value*/
+
+$null:0;
+$full:100%;
+.container-wrap {
+    padding: 0;
+}
+
+
+/*app-preview*/
+
+$app-width: 290px !default;
+$app-height: 516px !default;
+$app-besic-color: #212121;
+$app-submenu-color: #757575;
+$border-radius: 3px;
+
+/*app-preview*/
+
+$besic-height: 200px;
+$null:0;
+$full:100%;
+$variant:100px;
+$m-left: 264px;
+$pageheight: 750px;
+//-- Side Menu Style
+$sidemenu-margin-left: $m-left !default;
+//== Basics Of A Navbar
+$navbar-height: 50px !default;
+//-- Inside Page Height
+$insidepageheight: $pageheight;
+//== Padding Use Across.
+$padding-vertical: 24px !default;
+$padding-horizontal: 36px !default;

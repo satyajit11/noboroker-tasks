@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Landing Page</title>
+  <link href="https://fonts.googleapis.com/css?family=Lato|Open+Sans" rel="stylesheet">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+  <!--build:css css/styles.min.css-->
+  <link rel="stylesheet" href="css/styles.css">
+  <!--endbuild-->
+</head>
+
+<body>
+  <div class="row no-gutters app">
+      <div class="col-12 app-wrapper">
+        <div class="row no-gutters align-items-center justify-content-center app-header">
+            <h1>Application</h1>
+        </div>
+        <div class="row no-gutters app-content">
+          <div class="col-12 app-board">
+            <div class="row no-gutters board-wrapper">
+                <div class="col app-card">
+                  <div class="row no-gutters card-header">
+                    <div class="header-name">
+                      <p>TO_DO</p>
+                    </div>
+                  </div>
+                  <div id="sortable1" class="row no-gutters card-body droptrue">
+                    
+                  </div>
+                  <div class="row no-gutters card-addition">
+                    <div class="col-12 card-addition_input d-none">
+                      <div class="row no-gutters form-group">
+                          <textarea class="form-control" rows="3"></textarea>
+                      </div>
+                      <div class="row no-gutters align-items-center">
+                          <button type="button" class="btn btn-info">Add</button>
+                          <p class="cancel">Cancel</p>
+                      </div>
+                    </div>
+                    <div class="col-12 link-add">
+                      <a href="javascript:void(0);">Click to add card</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col app-card">
+                  <div class="row no-gutters card-header">
+                    <div class="header-name">
+                      <p>IN_PROGRESS</p>
+                    </div>
+                    <div class="header-action">
+                      
+                    </div>
+                  </div>
+                  <div id="sortable2" class="row no-gutters card-body dropfalse">
+
+                  </div>
+                  <div class="row no-gutters card-addition">
+                    <div class="col-12 card-addition_input d-none">
+                      <div class="row no-gutters form-group">
+                          <textarea class="form-control" rows="3"></textarea>
+                      </div>
+                      <div class="row no-gutters align-items-center">
+                          <button type="button" class="btn btn-info">Add</button>
+                          <p class="cancel">Cancel</p>
+                      </div>
+                    </div>
+                    <div class="col-12 link-add">
+                      <a href="javascript:void(0)">Click to add card</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col app-card">
+                  <div class="row no-gutters card-header">
+                    <div class="header-name">
+                      <p>DONE</p>
+                    </div>
+                    <div class="header-action">
+                      
+                    </div>
+                  </div>
+                  <div id="sortable3" class="row no-gutters card-body dropfalse1">
+
+                  </div>
+                  <div class="row no-gutters card-addition">
+                    <div class="col-12 card-addition_input d-none">
+                      <div class="row no-gutters form-group">
+                          <textarea class="form-control" rows="3"></textarea>
+                      </div>
+                      <div class="row no-gutters align-items-center">
+                          <button type="button" class="btn btn-info">Add</button>
+                          <p class="cancel">Cancel</p>
+                      </div>
+                    </div>
+                    <div class="col-12 link-add">
+                      <a href="javascript:void(0);">Click to add card</a>
+                    </div>
+                  </div>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  </div>
+
+
+  <!--build:js js/main.min.js -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+  <script defer src="https://use.fontawesome.com/releases/v5.0.12/js/all.js" integrity="sha384-Voup2lBiiyZYkRto2XWqbzxHXwzcm4A5RfdfG6466bu5LqjwwrjXCMBQBLMWh7qR" crossorigin="anonymous"></script>
+  <script src="js/builder-plugin.js"></script>
+  <script src="js/all.js"></script>
+</body>
+
+</html>
